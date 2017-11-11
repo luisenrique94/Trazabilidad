@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Trazabilidad.Models.Sacrificio>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="sacrificio">Registro De Sacrificio De Ganado</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodiGanadero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zona)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Raza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaDeSacrificio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoSacrificio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoDerecho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoIzquiero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoDerecho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoIzquierdo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Enfermedad)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodiGanadero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zona)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Raza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaDeSacrificio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoSacrificio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoDerecho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoIzquiero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoDerecho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoIzquierdo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Enfermedad)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CodigoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CodigoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CodigoId })
+        </td>
+    </tr>
+}
+
+</table>

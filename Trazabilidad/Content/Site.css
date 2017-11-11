@@ -1,0 +1,87 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/*MENU*/
+.navbar-nav{
+    margin:15px;
+    height:15px;
+}
+.navbar-inverse {
+    background-color: #5a932e;
+    border-color: #00ff21;
+   
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color:white;
+}
+
+.jumbotron h1{
+    color: #bd0008;
+    font-size: 30px; 
+       
+ }
+.jumbotron p{
+   font-family: status-bar;
+ font-size: 15px;   
+}
+.jumbotron{
+    background: #edeaea;
+    margin-top:130px;
+}
+
+/*IMAGENES*/
+h2{
+    font-size:20px;
+    color:#5a932e;
+}
+/*NACIMIENTO*/
+.nacimiento{
+     margin-top:60px;
+}
+/*Destete*/
+.destete{
+    margin-top:60px;
+}
+.engorde{
+    margin-top:60px;
+}
+.sacrificio{
+    margin-top:60px;
+}
+.ventas{
+    margin-top:60px;
+}
+h5{
+   color:#fd1c02;
+   font-size:18px;
+}
+/*nosotros*/
+.about{
+    margin-top:60px;
+}
+/*contacto*/
+.contacto{
+    margin-top:60px;
+}

@@ -1,0 +1,114 @@
+﻿@model Trazabilidad.Models.Nacimiento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Nacimiento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CodiGanadero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodiGanadero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomGanadero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomGanadero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Raza)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Raza)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enfermedad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enfermedad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Medicamentos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Medicamentos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Padre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Padre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Madre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Madre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodigoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,90 @@
+﻿@model Trazabilidad.Models.Venta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Venta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ruc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ruc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDeCorte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDeCorte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodBarra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodBarra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodBarraCarcasa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodBarraCarcasa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeVenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeVenta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClienteId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

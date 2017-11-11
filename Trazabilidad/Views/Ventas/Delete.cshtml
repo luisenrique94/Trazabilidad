@@ -1,0 +1,96 @@
+﻿@model Trazabilidad.Models.Venta
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Venta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ruc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ruc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDeCorte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDeCorte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodBarra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodBarra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodBarraCarcasa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodBarraCarcasa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeVenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeVenta)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
